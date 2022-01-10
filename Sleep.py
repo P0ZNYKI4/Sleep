@@ -120,10 +120,10 @@ Ent_M.grid(row = 1,column = 1, padx = 5, pady = 5)
 
 
 message_button = Button(text = "?", command = info)
-message_button.grid(row = 2,column = 0, padx = 5, pady = 5, sticky = "w")
+message_button.grid(row = 2, column = 0, padx = 5, pady = 5, sticky = "w")
 
 start_button = Button(text = "Запустить таймер", command = Start)
-start_button.grid(row = 2,column = 1, padx = 5, pady = 5, sticky = "e")
+start_button.grid(row = 2, column = 1, padx = 5, pady = 5, sticky = "e")
 
 S = 0 # Общие секунды
 Timer = False
