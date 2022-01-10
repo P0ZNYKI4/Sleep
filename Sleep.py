@@ -18,8 +18,7 @@ def main_timer(time_label, S):
 				root.destroy()
 				# Выключение PC
 				import os
-				print("Выкл")
-				#os.system('shutdown -s')
+				os.system('shutdown -s')
 			else:
 				S -= 1
 
@@ -90,9 +89,6 @@ def Start():
 
 def format(Sec):
 	return (str(int(Sec // 3600)) + "ч :" if int(Sec // 3600) != 0 else "") + str(int(Sec % 3600 // 60)) + "м :" + str(int(Sec % 3600 % 60)) + "с"
-
-def Секунда_сейчас():
-	return int(datetime.datetime.today().strftime("%S"))
 
 def info():
 	messagebox.showinfo(title = "Внимание", message = "Windows может перевести ваш компьютер в спящий режим. Смотреть: Панель управления -> Электропитание -> Настройка схемы электропитания -> Переводить компьютер в спящий режим (Никогда)")
