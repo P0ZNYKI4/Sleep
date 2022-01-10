@@ -25,9 +25,6 @@ def main_timer(time_label, S):
 	time()    
 
 
-  
-# функция запуска секундомера
-
 def Start():
 
 	global Timer, S
